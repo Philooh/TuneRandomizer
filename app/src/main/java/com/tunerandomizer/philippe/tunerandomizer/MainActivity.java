@@ -42,75 +42,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setButtonsClickListener();
-
-        // Declaring Server ip, username, database name and password
-        ip = "192.168.0.1";
-        db = "TuneRandomizer";
-        un = "public";
-        pass = "";
-        // Declaring Server ip, username, database name and password
-
     }
 
     protected String doInBackground(String... params)
     {
         String returnedValue = null;
-            try
-            {
-                con = connectionclass(un, pass, db, ip);        // Connect to database
-                if (con == null)
-                {
-                    returnedValue = "Check Your Internet Access!";
-                }
-                else
-                {
-                    String query = "select * from LA TABLE where ATTRIBUT= '" + "VALEUR" + "' and ATTRIBUT = '"+ "VALEUR" +"'  ";
-                    Statement stmt = con.createStatement();
-                    ResultSet rs = stmt.executeQuery(query);
-                    if(rs.next())
-                    {
-                        returnedValue = "Login successful";
-                        con.close();
-                    }
-                    else
-                    {
-                        returnedValue = "Invalid Credentials!";
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                returnedValue = ex.getMessage();
-            }
         return returnedValue;
-    }
-
-    @SuppressLint("NewApi")
-    public Connection connectionclass(String user, String password, String database, String server)
-    {
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-        Connection connection = null;
-        String ConnectionURL = null;
-        try
-        {
-            Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            ConnectionURL = "jdbc:jtds:sqlserver://" + server + database + ";user=" + user+ ";password=" + password + ";";
-            connection = DriverManager.getConnection(ConnectionURL);
-        }
-        catch (SQLException se)
-        {
-            Log.e("error here 1 : ", se.getMessage());
-        }
-        catch (ClassNotFoundException e)
-        {
-            Log.e("error here 2 : ", e.getMessage());
-        }
-        catch (Exception e)
-        {
-            Log.e("error here 3 : ", e.getMessage());
-        }
-        return connection;
     }
 
     //Method that is called when the user clicks the button
