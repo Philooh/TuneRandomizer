@@ -1,0 +1,1 @@
+include ':app', ':sqlite-android-3200100', ':mssql-jdbc-6.2.2.jre7', ':jtds-1.2.6-sources'

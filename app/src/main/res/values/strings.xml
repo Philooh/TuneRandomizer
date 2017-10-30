@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TuneRandomizer</string>
+    <string name="ClickMeButton">Générer une chanson au hasard</string>
+    <string name="artistsButtonText">Générer un artiste au hasard</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TuneRandomizer.iml" filepath="$PROJECT_DIR$/TuneRandomizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtds-1.2.6-sources/jtds-1.2.6-sources.iml" filepath="$PROJECT_DIR$/jtds-1.2.6-sources/jtds-1.2.6-sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mssql-jdbc-6.2.2.jre7/mssql-jdbc-6.2.2.jre7.iml" filepath="$PROJECT_DIR$/mssql-jdbc-6.2.2.jre7/mssql-jdbc-6.2.2.jre7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqlite-android-3200100/sqlite-android-3200100.iml" filepath="$PROJECT_DIR$/sqlite-android-3200100/sqlite-android-3200100.iml" />
+    </modules>
+  </component>
+</project>
